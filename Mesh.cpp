@@ -46,7 +46,6 @@ void Mesh::CreateBuffers() {
 
 	// 頂点バッファへのデータ転送
 	std::copy(vertices.begin(), vertices.end(), vertMap);
-
 	// 頂点バッファビューの作成
 	vbView.BufferLocation = vertBuff->GetGPUVirtualAddress();
 	vbView.SizeInBytes = sizeVB;
